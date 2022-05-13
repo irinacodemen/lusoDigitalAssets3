@@ -310,11 +310,7 @@
 import { use } from "echarts/core";
 import { CanvasRenderer } from "echarts/renderers";
 import { BarChart } from "echarts/charts";
-<<<<<<< HEAD
 import axios from "axios";
-=======
-import axios from 'axios';
->>>>>>> Currency list
 import {
   GridComponent,
   DatasetComponent,
