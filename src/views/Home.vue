@@ -271,21 +271,9 @@
         <h3 class="text-center font-size-25 txt-2 letter-space-2"> IF YOU'RE LOOKING FOR A WALLET </h3>
         <div class="row up-down-space">
           <div v-for="currencyList in currency_list" :key="currencyList.id" class="col-6 col-sm-6 col-lg-3 my-2">
-              <img class="left-icon-img" src="../assets/images/bitcoin-1.png" alt="">
+              <img class="left-icon-img" :src="require(`../assets/images/coin/${currencyList.icon}`)"  alt="">
               <span class="font-size-18 txt-2 ps-md-2 ps-0">{{ currencyList.name }}</span>
           </div>
-          <!-- <div class="col-6 col-sm-6 col-lg-3">
-              <img class="left-icon-img " src="../assets/images/bitcoin-2.png" alt="">
-            <span class="font-size-18 txt-2 ps-md-2 ps-0">LITECOIN</span>
-          </div>
-          <div class="col-6 col-sm-6 col-lg-3 pt-5 pt-lg-0">
-              <img class="left-icon-img " src="../assets/images/bitcoin-3.png" alt="">
-            <span class="font-size-18 txt-2 ps-md-2 ps-0">ETHEREUM</span>
-          </div>
-          <div class="col-6 col-sm-6 col-lg-3 pt-5 pt-lg-0">
-              <img class="left-icon-img-last" src="../assets/images/bitcoin-1.png" alt="">
-              <span class="font-size-18 txt-2 ps-md-2 ps-0">BITCOIN CASH</span>
-          </div> -->
         </div>
         <div class="row">
           <div class="col-md-12">
